@@ -15,7 +15,8 @@ class BiRNN(nn.Module):
     # The text tensor. Size: batch x (2 x hidden_size)
     def forward(self, x):
         batch = x.shape[0]
-        # output is the hidden states in the last RNN layer for each word. Size: batch x seq_len x (2 x hidden_size)        # last_hidden is the RNN’s hidden state for the last word. Size: 2 x batch x hidden_size
+        # output is the hidden states in the last RNN layer for each word. Size: batch x seq_len x (2 x hidden_size)
+        # last_hidden is the RNN’s hidden state for the last word. Size: 2 x batch x hidden_size
         output, last_hidden = self.gru(x)
         return last_hidden.transpose(0,1).contiguous().view(batch, -1)  
 
