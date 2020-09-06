@@ -60,7 +60,7 @@ class Seq2SeqOutputLayer(nn.Module):
             context = attention(enc_states, new_state.unsqueeze(1)).squeeze(1)
             # convert the concatenation of hidden state and attention vector into word_dim-dimension. Size: batch x word_dim
             new_state = self.combine_state_attn(torch.cat((new_state, context), dim=1))
-            # predict the scores for all dictionary words at the t-th position
+            # predict the scores for all dictionary words
             scores[:, t, :] = self.linear(new_state)
             # pass the new hidden state to the next GRU cell
             prev_dec_state = new_state
