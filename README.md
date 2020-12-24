@@ -1,6 +1,6 @@
 # Machine Reading Comprehension: Algorithms and Practice
 <p align="left">
-  <img src="https://cs.stanford.edu/~cgzhu/pic/cover_en.png" width="250" alt="MRC_book">
+  <img src="https://cs.stanford.edu/~cgzhu/pic/cover_en.jpg" width="250" alt="MRC_book">
 </p>
 
 This repository contains all the code examples in the book Machine Reading Comprehension: Algorithms and Practice
