@@ -3,7 +3,7 @@
   <img src="https://cs.stanford.edu/~cgzhu/pic/cover_en.jpg" width="250" alt="MRC_book">
 </p>
 
-This repository contains all the code examples in the book Machine Reading Comprehension: Algorithms and Practice
+This repository contains all the code examples in the book <a href="https://www.amazon.com/Machine-Reading-Comprehension-Algorithms-Practice/dp/0323901182" target="_blank">Machine Reading Comprehension: Algorithms and Practice</a>
 
 All code is is based on Python 3. The required packages are specified in requirements.txt.
 ```
